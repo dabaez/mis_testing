@@ -1,2 +1,2 @@
-# mc_testing
-Framework for testing Maximum Cut problems
+# mis_testing
+Framework for testing Maximum Independant Set problems
