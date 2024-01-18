@@ -372,7 +372,7 @@ def MIS(nx_graph, runtime_limit , seed_value = 1):
     size_mis, ind_set, number_violations = postprocess_gnn_mis(best_bitstring, nx_graph)
     gnn_tot_time = time() - gnn_start
 
-    print(f'MacxCut found by GNN is {size_mis}')
+    print(f'Independence number found by GNN is {size_mis} with {number_violations} violations')
     print(f'Took {round(gnn_tot_time, 3)}s, model training took {round(gnn_time, 3)}s')
 
     return gnn_tot_time, int(size_mis)

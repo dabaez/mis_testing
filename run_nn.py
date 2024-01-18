@@ -29,7 +29,7 @@ for command_full in commands:
     for instance_group in instance_groups:
         if instance_group.startswith("#"):
             continue
-        group_name, group_description = instance_group.split(' ',1)
+        group_name, group_description = instance_group.split(':',1)
         print("testing " + name + " with " + group_name)
         csv_path = folder_path +"/" + group_name + ".csv"
         if os.path.exists(csv_path):
@@ -41,9 +41,9 @@ for command_full in commands:
         for filename in os.listdir(group_path):
             if not df.loc[(df['file'] == filename)].empty:
                 continue
-            file_path = group_path + "/" + filename
+            file_path = "../" + group_path + "/" + filename
             formatted_command = command.format(file_path,time_limit)
-            result = subprocess.run(formatted_command, shell=True, capture_output=True)
+            result = subprocess.run(formatted_command, shell=True, capture_output=True,cwd="neural_network/")
             print(result.stdout.decode('utf-8'))
             print(result.stderr.decode('utf-8'))
             result_text = result.stdout.decode('utf-8').splitlines()[-1].split(',')

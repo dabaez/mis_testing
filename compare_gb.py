@@ -20,7 +20,7 @@ data = {}
 for algorithms in os.listdir("results/"+test_name):
     data[algorithms] = pd.read_csv("results/"+test_name+"/"+algorithms+"/"+dataset+".csv")
 
-fig, axs = plt.subplots(1, len(sizes), figsize=(20, 5))
+fig, axs = plt.subplots(1, len(sizes), figsize=(25, 5))
 
 algos = data.keys()
 
@@ -59,7 +59,7 @@ for i in range(len(sizes)):
     colors.append(d_percentages[main_alg])
 
 plt.subplots_adjust(top=0.7)
-#plt.show()
+plt.show()
 
 plt.close()
 

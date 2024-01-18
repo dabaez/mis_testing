@@ -1,5 +1,5 @@
 # write [algorithm name]:[command to execute algorithm]
 # {0} is where the file name goes and {1} is where the time limit goes
-ewcc:./classic_solvers/build/ewcc {0} {1}
-pls:./classic_solvers/build/pls {0} {1}
-sbts:./classic_solvers/build/sbts {0} {1}
+ewcc:./build/ewcc {0} {1}
+pls:./build/pls {0} {1}
+sbts:./build/sbts {0} {1}

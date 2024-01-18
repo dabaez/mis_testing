@@ -1,1 +1,4 @@
-gb_mis graph base with different node sizes and densities
+gb_mis:graph base with different node sizes and densities
+#CODE:graphs from code theory https://oeis.org/A265032/a265032.html
+#BHOSLIB:Benchmarks with Hidden Optimum Solutions for Graph Problems, taken from https://iridia.ulb.ac.be/~fmascia/maximum_clique/BHOSLIB-benchmark , took the complement of the graph as they are originally for Maximum Clique
+#DIMACS:Instances from the Second DIMACS Challenge, taken from https://iridia.ulb.ac.be/~fmascia/maximum_clique/DIMACS-benchmark , took the complement of the graph as they are originally for Maximum Clique
