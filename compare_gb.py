@@ -67,6 +67,10 @@ for i in range(len(colors)):
     for j in range(len(colors[i])):
         colors[i][j] *= 100
 
+print(f"Mean percentage: {np.mean(colors):.2f}")
+print(f"Percentage median: {np.median(colors):.2f}")
+print(f"STD Percentage: {np.std(colors):.2f}")
+
 d_range = [i for i in range(len(densities))]
 s_range = [i for i in range(len(sizes))]
 plt.pcolormesh(d_range, s_range, colors, cmap='viridis')
